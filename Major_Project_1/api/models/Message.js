@@ -1,32 +1,32 @@
 /**
- * User.js
+ * Message.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
+// message is for direct messages between 2 people
+
 module.exports = {
 
   attributes: {
-    full_name: {
-      type: 'text',
+    author_id_number: {
+      type: 'integer',
       required: true
     },
-    id_number: {
+    recipient_id_number: {
       type: 'integer',
-      required: true,
-      autoIncrement: true
+      required: true
     },
-    onlineStatus: {
-      type: 'boolean',
-      required: true,
-      defaultsTo: false
+    content: {
+      type: 'longtext',
+      required: true
     },
-    admin: {
-      type: 'boolean',
-      defaultsTo: false,
+    created: {
+      type: 'datetime',
       required: true
     }
-  } // closing attributes
 
+
+  }
 };

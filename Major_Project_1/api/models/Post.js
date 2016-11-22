@@ -1,32 +1,30 @@
 /**
- * User.js
+ * Post.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
+// post is for GROUP (3+ people)
+
 module.exports = {
 
   attributes: {
-    full_name: {
-      type: 'text',
+    author_id_number: {
+      type: 'integer',
       required: true
     },
-    id_number: {
+    group_id_number: {
       type: 'integer',
-      required: true,
-      autoIncrement: true
+      required: true
     },
-    onlineStatus: {
-      type: 'boolean',
-      required: true,
-      defaultsTo: false
+    content: {
+      type: 'longtext'
     },
-    admin: {
-      type: 'boolean',
-      defaultsTo: false,
+    created: {
+      type: 'datetime',
       required: true
     }
-  } // closing attributes
 
+  }
 };

@@ -1,5 +1,5 @@
 /**
- * User.js
+ * Group.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
@@ -8,25 +8,19 @@
 module.exports = {
 
   attributes: {
-    full_name: {
-      type: 'text',
-      required: true
-    },
     id_number: {
       type: 'integer',
-      required: true,
-      autoIncrement: true
+      autoIncrement: true,
+      required: true
     },
-    onlineStatus: {
-      type: 'boolean',
-      required: true,
-      defaultsTo: false
+    creator_id_number: {
+      type: 'integer',
+      required: true
     },
-    admin: {
-      type: 'boolean',
-      defaultsTo: false,
+    members_id_numbers: {
+      type: 'array',
       required: true
     }
-  } // closing attributes
-
+    
+  }
 };
