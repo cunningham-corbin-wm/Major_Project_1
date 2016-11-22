@@ -8,7 +8,23 @@
 module.exports = {
 
   attributes: {
-
-  }
+    first_name: {
+      type: 'text',
+      required: true
+    },
+    last_name: {
+      type: 'text',
+      required: true
+    },
+    email: {
+      type: 'email',
+      required: true
+    },
+    admin: {
+      type: 'boolean',
+      defaultsTo: false,
+      required: true
+    }
+  } // closing attributes
+  
 };
-
