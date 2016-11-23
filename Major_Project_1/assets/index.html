@@ -2,34 +2,48 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
-  <title>Chat App</title>
+  <link rel='icon' href='logo.png'>
+  <title>Bubble Chat</title>
 </head>
 <body>
 <div id='header'>
-  <div id='header-top'></div>
-  <div id='inner-header'>
-    <div id='header-left-center'>
+  <div class='header-top'></div>
+  <div class='inner-header'>
+      <div class='logo-div'>
+        <img src='logo.png' class='logo' alt='chat-bubble-logo'>
+      </div>
+      <div class='title-div'>
+        <img src='images/Bubble_Chat_Text.png' type='image/png' class='main-title'>
+      </div>
+  </div>
+</div>
+<div id='jumbo'>
+  <!-- The jumbo-content contains the welcoming message(s) and explains the purpose of the site -->
+  <div id='jumbo-content'>
+    <img src='images/grass_path.png' id='path_pic'>
 
-    </div>
-    <div id='login-panel'>
-      <form id='login-form'>
-        <input type='text' id='username-input' class='input-header'>
-        <label for='username-input' id='username-input-label' class='label-header'>Username :</label>
-        <br/>
-        <input type='password' id='password-input' class='input-header'>
-        <label for='password-input' id='password-input-label' class='label-header'>Password :</label>
-        <br/>
-        <button type='button' id='log-in-btn'>Log In</button>
-      </form>
-      <button type='button' id='create-account-btn'>Create Account</button>
+  </div>
+  <!-- A 'fake' header that is positioned at the bottom of the jumbo div -->
+  <div id='fake-header'>
+    <div class='header-top'></div>
+    <div id='inner-header'>
+        <div class='logo-div'>
+          <img src='logo.png' class='logo' alt='chat-bubble-logo'>
+        </div>
+        <div class='title-div'>
+          <img src='images/Bubble_Chat_Text.png' type='image/png' class='main-title'>
+        </div>
     </div>
   </div>
 </div>
-<div id='top-space'></div>
+
 <div id='main'>
 
-
-
 </div>
+
+
+
 </body>
+<script src='js/page_manipulation/header-stick.js'></script>
+<script src='js/page_manipulation/resize.js'></script>
 </html>
