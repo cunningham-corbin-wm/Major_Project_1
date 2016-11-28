@@ -26,7 +26,7 @@
   <!-- A 'fake' header that is positioned at the bottom of the jumbo div -->
   <div id='fake-header'>
     <div class='header-top'></div>
-    <div id='inner-header'>
+    <div class='inner-header'>
         <div class='logo-div'>
           <img src='logo.png' class='logo' alt='chat-bubble-logo'>
         </div>
@@ -36,13 +36,27 @@
     </div>
   </div>
 </div>
-
 <div id='main'>
-
+  <div id='main-top'></div>
+  <div id='welcome' class='main-box'>
+    <h4 class='main-h4'>Welcome to Bubble Chat!</h4>
+    <p class='main-p'>
+      Bubble Chat is a simple, yet effective web application that allows users to communicate each other through their browser. Bubble Chat has no specific 'theme' associated with it, because it is designed to allow users to talk with each other about whatever they wish to talk about. Joining  Still not sold, it's free!
+    </p>
+  </div>
+  <div id='log-in-div' class='main-box'>
+    <input class='' id='username' type='text' placeholder='Username/Email'>
+    <input class='' id='password' type='password' placeholder='Password'>
+    <button id='log-in'>Log In</button>
+    <p class='main-p'>Not registered? Sign up <a href='#create-account'>here</a>.</p>
+  </div>
+  <div id='create-account' name='create-account' class='main-box'>
+    <input class='main-input' id='username-create' type='text' placeholder='Username/Email'>
+    <br/>
+    <input class='main-input' id='password-create' type='password' placeholder='Password'>
+    <input class='main-input' id='password-confirm-create' type='password' placeholder='Confirm Password'>
+  </div>
 </div>
-
-
-
 </body>
 <script src='js/page_manipulation/header-stick.js'></script>
 <script src='js/page_manipulation/resize.js'></script>

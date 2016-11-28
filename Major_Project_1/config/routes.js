@@ -34,7 +34,7 @@ module.exports.routes = {
 
   '/': {
     view: '../assets/index.html'
-  }
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,20 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+  '/chat': {
+    view: '../assets/chat.html'
+  },
+
+  '/editprofile': {
+    view: '../assets/profile.html'
+  },
+
+  'get /viewProfile/:id_number': {
+    controller: 'UserController',
+    action: 'viewProfile',
+    skipAssets: true
+  }
+
 
 };

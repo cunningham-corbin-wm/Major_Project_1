@@ -12,6 +12,10 @@ module.exports = {
       type: 'text',
       required: true
     },
+    email: {
+      type: 'email',
+      required: true
+    },
     id_number: {
       type: 'integer',
       required: true,
