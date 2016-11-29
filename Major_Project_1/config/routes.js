@@ -33,7 +33,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: '../assets/index.html'
+    view: 'homepage'
   },
 
   /***************************************************************************
@@ -47,11 +47,11 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/chat': {
-    view: '../assets/chat.html'
+    view: 'chatpage'
   },
 
   '/editprofile': {
-    view: '../assets/profile.html'
+    view: 'editprofilepage'
   },
 
   'get /viewProfile/:id_number': {

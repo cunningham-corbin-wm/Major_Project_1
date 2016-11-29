@@ -3,6 +3,7 @@ body {
 }
 p {
   margin: 0px;
+  font-family: Arial, sans-serif;
 }
 
 
@@ -67,32 +68,45 @@ p {
   height: 10px;
   width: 100%;
 }
+
+/* Ids and Classes to be used below the header */
 #main {
   background-color: #323031;
   height: auto;
   min-height: 900px;
   width: 100%;
-
 }
 .main-box {
   width: 80%;
-  height: 300px;
+  height: 270px;
   margin: 50px 10% 0px 10%;
   background-color: #3D3B3C;
 }
-.main-h4 {
+.main-h2 {
   text-align: center;
   color: #8087B2;
-  padding: 10px 0px ;
+  padding: 10px 0px 0px 0px;
   margin: 0px;
+  font-family: Arial, sans-serif;
 }
 .main-p {
-  align-self: center;
+  text-align: center;
   color: #878385;
   padding: 4px 25px 0px 25px;
   margin: 0px;
 }
+.main-p-welcome {
+  text-align: center;
+  color: #878385;
+  padding: 12px 75px 0px 75px;
+  margin: 0px;
+  font-size: 175%;
+  font-family: Arial, sans-serif;
+}
 
+#welcome {
+  min-height: 320px;
+}
 #log-in-div {
   margin: 40px 10% 0px 10%;
 }
