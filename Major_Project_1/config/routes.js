@@ -54,11 +54,15 @@ module.exports.routes = {
     view: 'editprofilepage'
   },
 
-  'get /viewProfile/:id_number': {
+  // 'get /viewProfile/:id_number': {
+  //   controller: 'UserController',
+  //   action: 'viewProfile',
+  //   skipAssets: true
+  // }
+  'post /User/:_id': {
     controller: 'UserController',
-    action: 'viewProfile',
+    action: 'update',
     skipAssets: true
   }
-
 
 };

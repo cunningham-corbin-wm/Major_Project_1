@@ -28,18 +28,29 @@ module.exports = {
 		});
 	},
 
-	viewProfile: function (req, res) {
-		if (!req.id_number) {
+	read: function (req, res) {
+		if (!req.body) {
 			return res.badRequest('No body data passed.');
 		}
-		User.find({id_number: req.id_number}).exec(function (err, theUser) {
+		User.find({}).exec(function (err, theUser) {
 			if (err) {
 				return res.serverError(err);
 			}
-			return res.view('viewProfile/:id_number', {
+			return res.view('viewProfile/:_id', {
 				user: theUser
 			});
+		});
+	},
 
+	update: function (req, res) {
+		if (!req.body) {
+			return res.badRequest('No body data passed.');
+		}
+		User.find({}, [], {$set: req.body}, {new:true}, function (err, theUser) {
+			if (err) {
+				return res.serverError(err);
+			}
+			res.json(theUser);
 		});
 	}
 
