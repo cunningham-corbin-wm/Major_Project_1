@@ -46,23 +46,20 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/chat': {
-    view: 'chatpage'
-  },
-
-  '/editprofile': {
-    view: 'editprofilepage'
-  },
-
-  // 'get /viewProfile/:id_number': {
+  // 'PUT /User/:id': {
   //   controller: 'UserController',
-  //   action: 'viewProfile',
+  //   action: 'update',
   //   skipAssets: true
-  // }
-  'post /User/:_id': {
-    controller: 'UserController',
-    action: 'update',
-    skipAssets: true
-  }
+  // },
+  // 'delete /User/:id': {
+  //   controller: 'UserController',
+  //   action: 'delete',
+  //   skipAssets: true
+  // },
+  // 'findByIdAndRemove': {
+  // 
+  // },
+
+  'get /User/vipOnly': 'UserController.vipOnly',
 
 };

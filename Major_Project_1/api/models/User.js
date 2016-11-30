@@ -16,6 +16,10 @@ module.exports = {
       type: 'email',
       required: true
     },
+    password: {
+      type: 'text',
+      required: true
+    },
     admin: {
       type: 'boolean',
       defaultsTo: false,
